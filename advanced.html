@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      form {
+        margin-left: 10px;
+        align-items: start;
+      }
+      input[type="text"] {
+        font-size: 14px;
+        width: 400px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid rgb(214, 214, 214);
+        box-shadow: 1px 3px 4px gray;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation__container">
+      <ul>
+        <li><a href="index.html" class="navigation__main">Google
+            Search</a></li>
+        <li><a href="image.html" class="navigation__image">Google Image
+            Search</a></li>
+        <li><a href="advanced.html" class="navigation__advanced">Google Advanced
+            Search</a></li>
+      </ul>
+    </nav>
+    <form action="https://www.google.com/search" class="form__advanced">
+      <h2>Advanced</h2>
+      <table>
+        <tr class="block">
+          <td><label for="all">all these words:</label></td>
+          <td><input type="text" name="as_q" id="all"></td>
+        </tr>
+        <tr class="block">
+          <td><label for="exact">this exact word or phrase:</label></td>
+          <td><input type="text" name="as_epq" id="exact"></td>
+        </tr>
+        <tr class="block">
+          <td><label for="any">any of these words:</label></td>
+          <td><input type="text" name="as_oq" id="any"></td>
+        </tr>
+        <tr class="block">
+          <td><label for="none">none of these words:</label></td>
+          <td><input type="text" name="as_eq" id="none"></td>
+        </tr>
+        <tr class="submit-advanced">
+          <td><input type="submit" id='submit' value="Google Advanced Search"
+              class="btn btn-primary"></td>
+          <td><label for="submit" hidden="true">Submit</label></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
